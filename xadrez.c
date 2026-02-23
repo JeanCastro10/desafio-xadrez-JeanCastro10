@@ -4,7 +4,7 @@ int main(){
     
     //declarando variaveis 
     
-    int bispo = 5, torre = 5, rainha = 8, cavalo;
+    int bispo = 5, torre = 5, rainha = 8, cavalo = 1;
     int b;
     int t = 1;
     int r = 1;
@@ -13,7 +13,7 @@ int main(){
     // ======= BISPO: 5 casas na diagonal superior direita =======
     // Diagonal = combinação de duas direções básicas por passo (Cima + Direita)
     
-    printf("=====BISPO: 5 casas na diagonal superior direita=====\n");
+    printf("\2=====BISPO: 5 casas na diagonal superior direita=====\n");
     for ( b = 1; b <= bispo; b++)
     {
         printf("cima\n");
@@ -22,7 +22,7 @@ int main(){
     
     // ======= TORRE: 5 casas para a direita =======
     
-    printf("=====TORRE: 5 casas para a direita=====\n");
+    printf("\n=====TORRE: 5 casas para a direita=====\n");
 
     while (t <= torre)
     {   
@@ -31,7 +31,7 @@ int main(){
     }   
     
     // ======= RAINHA: 8 casas para a esquerda =======
-    printf("=====RAINHA: 8 casas para a esquerda=====\n");
+    printf("\n=====RAINHA: 8 casas para a esquerda=====\n");
     
     do
     {
@@ -40,14 +40,16 @@ int main(){
 
     } while (r <= rainha);
     
-
-     while (cavalo--)
+    //// ======= CAVALO 2 casas para cima e 1 para a direita =======
+    printf("\n=====Cavalo: 8 casas para a esquerda=====\n");   
+        while (cavalo--)
      {
-        for (int i = 0; i <== 2; i++ )
+        for (int i = 0; i <= 2; i++ )
         {
-            printf("cima\n")
+            printf("Baixo\n");
         }
-            printf("direita\n")
+            printf("Esquerda\n");
+
 
 
      }
